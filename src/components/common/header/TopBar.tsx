@@ -5,6 +5,24 @@ import { Fragment, useMemo } from 'react';
 import { Contact } from '@/types/Contact.ts';
 import ContactItem from '@components/common/header/ContactItem.tsx';
 
+const socials = [
+  {
+    icon: 'fa fa-facebook',
+  },
+  {
+    icon: 'fa fa-twitter',
+  },
+  {
+    icon: 'fa fa-google',
+  },
+  {
+    icon: 'fa fa-skype',
+  },
+  {
+    icon: 'fa fa-pinterest',
+  },
+];
+
 const TopBar = () => {
   const { data, isLoading } = useSWR<Contact>('/information', contactFetcher);
 
@@ -48,11 +66,13 @@ const TopBar = () => {
           <div className="col-lg-3 col-md-4 col-sm-4">
             <div className="topbar-right">
               <List>
-                <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i className="fa fa-google"></i></a></li>
-                <li><a href="#"><i className="fa fa-skype"></i></a></li>
-                <li><a href="#"><i className="fa fa-pinterest"></i></a></li>
+                {socials.map((social) => (
+                  <li key={social.icon}>
+                    <a href="#">
+                      <i className={social.icon}></i>
+                    </a>
+                  </li>
+                ))}
               </List>
             </div>
           </div>
