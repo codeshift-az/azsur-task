@@ -3,16 +3,13 @@ import { useTranslation } from "react-i18next";
 // Helmet
 import { Helmet } from "react-helmet-async";
 
-// Helpers
-import { getPageTitle } from "@/helpers";
-
 // Components
 import Layout from "@/components/Layout";
 
 const Home = () => {
   const { t } = useTranslation("pages", { keyPrefix: "home" });
 
-  const pageTitle = getPageTitle(t("title"));
+  const pageTitle = import.meta.env.VITE_PROJECT_NAME;
 
   return (
     <Layout>
@@ -24,7 +21,6 @@ const Home = () => {
         <meta name="description" content={t("description")} />
       </Helmet>
 
-      <h1>{t("title")}</h1>
     </Layout>
   );
 };

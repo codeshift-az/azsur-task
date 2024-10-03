@@ -1,7 +1,9 @@
+import TopBar from '@components/common/header/TopBar.tsx';
+
 const Header = () => {
   return (
     <header>
-      <h1>Header</h1>
+      <TopBar />
     </header>
   );
 };
