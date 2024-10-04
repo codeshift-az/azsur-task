@@ -1,8 +1,9 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import type { ReactNode } from 'react';
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const Layout = ({ children }: Props) => {

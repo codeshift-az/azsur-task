@@ -16,7 +16,7 @@ export default defineConfig({
       "@routes": path.resolve(__dirname, "./src/routes"),
       "@store": path.resolve(__dirname, "./src/store"),
       "@styles": path.resolve(__dirname, "./src/styles"),
-      "@assets": path.resolve(__dirname, "./assets"), // For assets folder outside src
+      "@assets": path.resolve(__dirname, "./assets") // For assets folder outside src
     },
   },
 });

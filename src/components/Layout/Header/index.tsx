@@ -1,10 +1,12 @@
-import TopBar from '@components/common/header/TopBar.tsx';
+import HeaderTop from '@components/header/HeaderTop.tsx';
+import HeaderBottom from '@components/header/HeaderBottom.tsx';
 
 const Header = () => {
   return (
-    <header>
-      <TopBar />
-    </header>
+    <>
+      <HeaderTop />
+      <HeaderBottom />
+    </>
   );
 };
 

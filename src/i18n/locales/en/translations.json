@@ -1,7 +1,12 @@
 {
   "pages": {
     "home": {
-      "title": "Home page"
+      "title": "Home page",
+      "about": "About",
+      "projects": "Projects",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
     },
     "notFound": {
       "title": "Page not found",

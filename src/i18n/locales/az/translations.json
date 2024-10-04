@@ -1,7 +1,12 @@
 {
   "pages": {
     "home": {
-      "title": "Ana səhifə"
+      "title": "Ana səhifə",
+      "about": "Haqqımızda",
+      "projects": "Proyektlər",
+      "services": "Xidmətlər",
+      "blog": "Blog",
+      "contact": "Əlaqə"
     },
     "notFound": {
       "title": "Səhifə tapılmadı",

@@ -1,9 +1,9 @@
 import useSWR from 'swr';
 import { contactFetcher } from '@api/contacts/contactApi.ts';
-import List from '@components/common/ui/List.tsx';
+import List from '@components/ui/List.tsx';
 import { Fragment, useMemo } from 'react';
 import { Contact } from '@/types/Contact.ts';
-import ContactItem from '@components/common/header/ContactItem.tsx';
+import ContactItem from '@components/header/ContactItem.tsx';
 
 const socials = [
   {
@@ -23,7 +23,7 @@ const socials = [
   },
 ];
 
-const TopBar = () => {
+const HeaderTop = () => {
   const { data, isLoading } = useSWR<Contact>('/information', contactFetcher);
 
   const contacts = useMemo(() => {
@@ -82,4 +82,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default HeaderTop;

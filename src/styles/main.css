@@ -18,7 +18,7 @@
 	===================
 
 	1. Theme Default CSS (body, link color, section etc)
-	2. Header Area
+	2. HeaderBottom Area
 	  2.1 mainmenu
       2.2 dropdwon menu
 
@@ -155,7 +155,7 @@ body {
     padding: 0.2em 0;
 }
 /*----------------------------------------*/
-/*  2.Header Area
+/*  2.HeaderBottom Area
 /*----------------------------------------*/
 .topbar-left ul li {
     display: inline-block;
@@ -379,7 +379,7 @@ body {
 /*----------------------------------------*/
 .mobile-menu-area {
     background: #323333 none repeat scroll 0 0;
-    padding: 10px 0px ;
+    padding: 16px 0 24px;
 }
 .mean-container .mean-bar::after {
     color: #ffffff;
